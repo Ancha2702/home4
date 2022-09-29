@@ -4,14 +4,17 @@ Console.Clear();
 
 Console.Write("Введите размер массива: ");
 int arrayLenght = int.Parse(Console.ReadLine()!);
-
-int[] array = new int[arrayLenght];
-
+int[] array = Create(arrayLenght);
 FillArray(array);
 PrintArray(array);
 int pos = Count(array);
 Console.WriteLine("");
 Console.WriteLine($"Четных чисел в массиве: {pos}");
+
+int[] Create(int arrayLenght)
+{
+    return new int[arrayLenght];
+}
 
 void FillArray(int[] array)
 {
@@ -22,7 +25,7 @@ void FillArray(int[] array)
     }
 }
 
-void PrintArray(int[] array)
+void PrintArray(int[] array1)
 {
     for (int i = 0; i < array.Length; i++)
     {
