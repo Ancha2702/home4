@@ -11,7 +11,7 @@ int pos = Count(array);
 Console.WriteLine("");
 Console.WriteLine($"Четных чисел в массиве: {pos}");
 
-int[] Create(int arrayLenght)
+int[] Create(int arrayLenght)// создание массива
 {
     return new int[arrayLenght];
 }
